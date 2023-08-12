@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرفی اداره</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: linear-gradient(to bottom, #9b59b6, #3498db);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 10px;
+            text-align: right;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #663399;
+            color: #ffffff;
+            padding: 2rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .info-item {
+            font-size: 1.2rem;
+            line-height: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .icon {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-info {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .info-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .left-details {
+            text-align: left;
+        }
+
+        .right-details {
+            text-align: right;
+        }
+
+        .info-title {
+            font-size: 1.2rem;
+            color: #663399;
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <div class="container">
+        <div class="header">
+            <h1 class="edare-name">به سایت  {{onvan}} خوش آمدید</h1>
+        </div>
+        <div class="office-info">
+            <div class="info-item">
+                <span class="icon">🏢</span>
+                <p>{{onvan}}</p>
+            </div>
+                <div class="info-item">
+                </div>
+            </div>
+            <div class="contact-info">
+                <h2>ارتباط با ما</h2>
+                <p>برای اطلاعات بیشتر و درخواست‌های خود، با ما تماس بگیرید.</p>
+            </div>
+            <div class="info-item" style="justify-content: flex-start; text-align: left;">
+                <span class="icon">📞</span>
+                <p style="margin: 0;">تلفن: {{phone}}</p>
+            </div>
+            <div class="info-item" style="justify-content: flex-start; text-align: left;">
+                <span class="icon">📧</span>
+                <p style="margin: 0;">ایمیل:{{email}}</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
